@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+            font-family: consolas;
+        }
+
+        .container {
+            width: 98%;
+            /* border: 2px solid red; */
+            /* background: #333; */
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container .card {
+            margin-right: 30px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .container .card .face {
+            width: 300px;
+            height: 200px;
+            transition: 0.5s;
+        }
+
+        .container .card .face.face1 {
+            position: relative;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            transform: translateY(100px);
+        }
+
+        .container .card:hover .face.face1 {
+            background: #ff0057;
+            transform: translateY(0);
+        }
+
+
+
+
+        .container .card .face.face2 {
+            position: relative;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); */
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            transform: translateY(-100px);
+        }
+
+        .container .card:hover .face.face2 {
+            transform: translateY(0);
+        }
+
+        #close-window {
+            position: absolute;
+            display: flex;
+            justify-content: end;
+            color: red;
+        }
+
+        #cb:checked~#card1 {
+            display: none;
+        }
+        #cb2:checked~#card2 {
+            display: none;
+        }
+        #cb3:checked~#card3 {
+            display: none;
+        }
+        #cb4:checked~#card4 {
+            display: none;
+        }
+        /* #contain1{
+            border: 2px solid red;
+           
+        } */
+        #contain1 label ,#contain2 label ,#contain3 label,#contain4 label{
+            color: white;
+            position: absolute;
+            margin-top: 100px;
+            z-index: 3;
+        }
+        img{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="contain1">
+            <label for=cb><i>Not Interested</i></label>
+            <input type='checkbox' style='display: none' id=cb>
+            <div class="card" id="card1">
+                <div class="face face1">
+
+                    <div class="content">
+                        <img src="iframe-img1.png" alt="">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis
+                            provident at.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contain2">
+            <label for=cb2><i>Not Interested</i></label>
+            <input type='checkbox' style='display: none' id=cb2>
+            <div class="card" id="card2">
+                <div class="face face1">
+
+                    <div class="content">
+                        <img src="iframe-img2.png" alt="">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis
+                            provident at.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contain3">
+            <label for=cb3><i>Not Interested</i></label>
+            <input type='checkbox' style='display: none' id=cb3>
+            <div class="card" id="card3">
+                <div class="face face1">
+
+                    <div class="content">
+                        <img src="iframe-img3.png" alt="">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis
+                            provident at.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contain4">
+            <label for=cb4><i>Not Interested</i></label>
+            <input type='checkbox' style='display: none' id=cb4>
+            <div class="card" id="card4">
+                <div class="face face1">
+
+                    <div class="content">
+                        <img src="iframe-img1.png" alt="">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis
+                            provident at.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

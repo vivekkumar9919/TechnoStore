@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        #foot1 {
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            /* display: flex;
+            justify-content: center; */
+        }
+        #foot2{
+            border: 3px solid red;
+            width: 100%;
+            height: 100px;
+        }
+        #connect{
+            font-size: 40px;
+            letter-spacing: 1px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #fallow{
+           display: flex;
+           /* border: 2px solid red; */
+           justify-content: center;
+           font-size: 35px;
+           margin-right: 10px;
+        }
+        .fallowitem{
+            margin: 12px;
+        
+            /* border: 2px solid green; */
+            
+        }
+        .fa-instagram{
+            color: red;
+        }
+        .fa-instagram :hover{
+            background-color: red;
+            color: white;
+        }
+        .fa-twitter-square{
+            color: blue;
+           
+        }
+        .fa-youtube-square{
+            color: red;
+        }
+        .fa-facebook-square{
+            color: blue;
+        }
+
+        .fallowitem:hover{
+           transform: scale(1.2);
+        }
+        #copy{
+            font-size: 20px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+
+        
+        #info-box{
+            margin-top: 50px;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .info{
+            height: 230px;
+            width: 280px;
+            /* border: 2px solid white; */
+
+        }
+       #info1 {
+        /* margin-top: 50px; */
+           margin-left: 40px;
+           color: rgb(138, 241, 241);
+           padding-left: 60px;
+           /* width: 280px; */
+       }
+       #info1 h2 ,#info2 h2 ,#info3 h2,#info4 h2{
+        color: white;
+        font-size: 30px;
+        margin-bottom: 30px;
+       }
+       #info1 div {
+        font-size: 20px;
+        margin-bottom: 5px;
+        
+       }
+       #info4{
+           margin-right: 40px;
+       }
+
+       #info2 ,#info3,#info4{
+            margin-left: 40px;
+           color: rgb(138, 241, 241);
+           padding-left: 60px;
+       }
+       #info2 ul li,#info3 ul li,#info4 ul li{
+        font-size: 20px;
+        margin-bottom: 5px;
+       }
+
+
+    </style>
+</head>
+
+<body>
+    <footer id="footer" >
+        <div id="info-box">
+            <div id="info1" class="info">
+                <h2>About us</h2> 
+                <div>Phone: 123456789</div>
+                <div>Email: abc@gmail.com</div>
+                <div>Address: abc xyz </div>
+            </div>
+            <div id="info2" class="info">
+                <h2>Information</h2> 
+                <ul>
+                    <li>About us</li>
+                    <li>Delivery Information</li>
+                    <li>Privacy & Policy</li>
+                    <li>Manufactures</li>
+                    <li>Terms & Conditions</li>
+                    
+                </ul>
+            </div>
+            <div id="info3" class="info">
+                <h2>Extras</h2> 
+                <ul>
+                    <li>Order & Returns</li>
+                    <li>Search Terms</li>
+                    <li>Advance Search</li>
+                    <li>Affiliates</li>
+                    <li>Group Sales</li>
+                    
+                </ul>
+            </div>
+            <div id="info4" class="info">
+                <h2>My Accounts</h2> 
+                <ul>
+                    <li>My account</li>
+                    <li>Login</li>
+                    <li>My Cart</li>
+                    <li>Wishlist</li>
+                    <li>Checkout</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div id="foot1">
+            <!-- <center id="connect">FOLLOWS US</center><br>
+             <center> <hr style="height: 3px; width: 40% ; background-color: red;"></center> -->
+             <div id="fallow">
+                <a href="#">
+                    <div id="insta" class="fallowitem"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                </a>
+                <a href="#">
+                    <div id="twiter" class="fallowitem"><i class="fa fa-twitter-square" aria-hidden="true"></i></div>
+                </a>
+                <a href="#">
+                    <div id="youtube" class="fallowitem"><i class="fa fa-youtube-square" aria-hidden="true"></i></div>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100037722421926">
+                    <div id="facebook" class="fallowitem"><i class="fa fa-facebook-square" aria-hidden="true"></i></div>
+                </a>
+                <br>      
+           </div>
+           <div id="copy">
+            CopyWrite &copy;Vivek Kumar 2022
+            
+        </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

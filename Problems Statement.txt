@@ -1,0 +1,6 @@
+
+Problem Statement
+
+In many E-commerce website there are lots of itmes in home page and 
+we can not remove them form home page 
+I try to solve this problems in my webpage
